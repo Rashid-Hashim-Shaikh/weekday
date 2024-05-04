@@ -1,0 +1,41 @@
+@font-face {
+  font-family: '__lexend';
+  font-weight: 700;
+  src: url('assets/fonts/__lexend/Lexend-Bold.woff2') format('woff2'),
+      url('assets/fonts/__lexend/Lexend-Bold.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '__lexend';
+  font-weight: 600;
+  src: url('assets/fonts/__lexend/Lexend-SemiBold.woff2') format('woff2'),
+      url('assets/fonts/__lexend/Lexend-SemiBold.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '__lexend';
+  font-weight: 500;
+  src: url('assets/fonts/__lexend/Lexend-Medium.woff2') format('woff2'),
+      url('assets/fonts/__lexend/Lexend-Medium.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '__lexend';
+  font-weight: 400;
+  src: url('assets/fonts/__lexend/Lexend-Regular.woff2') format('woff2'),
+      url('assets/fonts/__lexend/Lexend-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: __LexendFont_Fallback;
+  src: local("Arial");
+  ascent-override:93.16%;descent-override:23.29%;line-gap-override:0.00%;size-adjust:107.34%}
+
+
+html body {
+  font-family: __lexend;
+}

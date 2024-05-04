@@ -1,10 +1,16 @@
-import { Typography } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import MainApp from './MainApp';
 
 function App() {
+  const theme = createTheme({
+    typography: {
+      fontFamily: ['__lexend', 'Arial', 'sans-serif'].join(','),
+    },
+  });
   return (
-    <Typography variant="h1">
-      Weekday
-    </Typography>
+    <ThemeProvider theme={theme}>
+      <MainApp />
+    </ThemeProvider>
   );
 }
 
