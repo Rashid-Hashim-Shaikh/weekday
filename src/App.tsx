@@ -1,11 +1,11 @@
+import { Typography } from '@mui/material';
 
 function App() {
-
   return (
-    <div>
+    <Typography variant="h1">
       Weekday
-    </div>
-  )
+    </Typography>
+  );
 }
 
-export default App
+export default App;
