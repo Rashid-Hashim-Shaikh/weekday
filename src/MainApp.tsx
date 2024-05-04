@@ -1,34 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { FilterSection, JobList } from './component';
 import mockApiResponse from './data/mockApi.json';
+import { JdDetails } from './types';
 
 const MainApp = () => {
-  console.log(mockApiResponse);
+  const [jobList, setJobList] = useState<JdDetails[] | null>(null);
+
   useEffect(() => {
-    // const myHeaders = new Headers();
-    // myHeaders.append('Content-Type', 'application/json');
-
-    // const body = JSON.stringify({
-    //   limit: 10,
-    //   offset: 0,
-    // });
-
-    // const requestOptions = {
-    //   method: 'POST',
-    //   headers: myHeaders,
-    //   body,
-    // };
-    // const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT;
-    // fetch(API_ENDPOINT, requestOptions)
-    //   .then((response) => response.text())
-    //   .then((result) => console.log(result))
-    //   .catch((error) => console.error(error));
+    setJobList(mockApiResponse.jdList);
   }, []);
 
   return (
     <div>
-      <FilterSection />
-      <JobList />
+      <FilterSection jobList={jobList} />
+      {jobList && <JobList jobList={jobList} />}
     </div>
   );
 };
