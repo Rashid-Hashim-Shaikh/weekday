@@ -35,7 +35,17 @@
   src: local("Arial");
   ascent-override:93.16%;descent-override:23.29%;line-gap-override:0.00%;size-adjust:107.34%}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html body {
   font-family: __lexend;
+}
+
+p {
+  margin: 3px 0;
+
 }
