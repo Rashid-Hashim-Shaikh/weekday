@@ -8,7 +8,6 @@ const FilterSection = () => (
     <div className="filters-container">
       <SelectRoles />
       <SelectEmployees />
-      <div>SelectEmployees</div>
       <div>SelectExperience</div>
       <div>SelectOfficeMode</div>
       <div>SelectTechStack</div>
