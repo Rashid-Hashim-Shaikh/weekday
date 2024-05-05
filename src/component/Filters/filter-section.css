@@ -1,0 +1,7 @@
+.filters-container {
+    display: flex;
+    padding: 5px;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
