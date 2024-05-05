@@ -183,3 +183,28 @@ export const expOptions: ExpOption[] = [
   { label: '9', value: 9 },
   { label: '10', value: 10 },
 ];
+
+export const modeOptions: Option[] = [
+  { label: 'Remote', value: 'Remote' },
+  { label: 'Hybrid', value: 'Hybrid' },
+  { label: 'In-Office', value: 'In-Office' },
+];
+
+export const techStackOptions: Option[] = [
+  { label: 'Python', value: 'Python' },
+  { label: 'Java', value: 'Java' },
+  { label: 'GoLang', value: 'GoLang' },
+  { label: 'Ruby/Rails', value: 'Ruby/Rails' },
+  { label: 'C++', value: 'C++' },
+  { label: 'Kotlin', value: 'Kotlin' },
+  { label: 'Django', value: 'Django' },
+  { label: 'C#', value: 'C#' },
+  { label: 'GraphQL', value: 'GraphQL' },
+  { label: 'Flask', value: 'Flask' },
+  { label: 'Typescript', value: 'Typescript' },
+  { label: 'AWS', value: 'AWS' },
+  { label: 'Javascript', value: 'Javascript' },
+  { label: 'Rust', value: 'Rust' },
+  { label: 'NodeJS', value: 'NodeJS' },
+  { label: 'React', value: 'React' },
+];
