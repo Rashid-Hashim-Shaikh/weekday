@@ -4,6 +4,8 @@ import SelectEmployees from './SelectEmployees';
 import SelectExperience from './SelectExperience';
 import SelectOfficeMode from './SelectOfficeMode';
 import SelectTechStack from './SelectTechStack';
+import SelectMinPay from './SelectMinPay';
+import SearchCompany from './SearchCompany';
 
 import './filter-section.css';
 
@@ -14,11 +16,11 @@ const FilterSection = () => (
       <SelectEmployees />
       <SelectExperience />
       <SelectOfficeMode />
-      {/* Conditionally render tech stack whenever Engineering role is selected */}
+      {/* Conditionally render tech stack whenever Engineering role is selected.
+      replace true with the condition */}
       {true && <SelectTechStack />}
-      <div>SelectTechStack</div>
-      <div>SelectMinPay</div>
-      <div>Search Company</div>
+      <SelectMinPay />
+      <SearchCompany />
     </div>
   </Box>
 );
