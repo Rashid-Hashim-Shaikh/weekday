@@ -1,20 +1,22 @@
 import { useEffect, useState } from 'react';
-import { FilterSection, JobList } from './component';
+import { Container } from '@mui/material';
+import { FilterSection, JdList } from './component';
 import mockApiResponse from './data/mockApi.json';
 import { JdDetails } from './types';
 
 const MainApp = () => {
-  const [jobList, setJobList] = useState<JdDetails[] | null>(null);
+  const [jdList, setJdList] = useState<JdDetails[] | null>(null);
 
   useEffect(() => {
-    setJobList(mockApiResponse.jdList);
+    // call API and set the JD list, later on add redux and store it in global store
+    setJdList(mockApiResponse.jdList);
   }, []);
 
   return (
-    <div>
-      <FilterSection jobList={jobList} />
-      {jobList && <JobList jobList={jobList} />}
-    </div>
+    <Container maxWidth="xl">
+      <FilterSection />
+      {jdList && <JdList />}
+    </Container>
   );
 };
 

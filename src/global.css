@@ -45,6 +45,10 @@ html body {
   font-family: __lexend;
 }
 
+body {
+ color: #0d0d0d;
+ padding: 20px;
+}
 p {
   margin: 3px 0;
 

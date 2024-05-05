@@ -1,7 +1,7 @@
 import FilterSection from './Filters/FilterSection';
-import JobList from './List/JobList';
+import JdList from './List/JdList';
 
 export {
   FilterSection,
-  JobList,
+  JdList,
 };
