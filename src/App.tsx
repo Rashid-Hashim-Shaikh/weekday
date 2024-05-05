@@ -1,5 +1,7 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Provider } from 'react-redux';
 import MainApp from './MainApp';
+import { store } from './redux/store';
 
 function App() {
   const theme = createTheme({
@@ -9,7 +11,9 @@ function App() {
   });
   return (
     <ThemeProvider theme={theme}>
-      <MainApp />
+      <Provider store={store}>
+        <MainApp />
+      </Provider>
     </ThemeProvider>
   );
 }
